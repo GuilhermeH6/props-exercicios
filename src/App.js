@@ -3,12 +3,40 @@ import CardVideo from "./CardVideo";
 import "./styles.css";
 
 export default function App() {
-  const titulo = "Título do vídeo";
-  const infoVideo = {
-    nome: titulo,
-    img: "https://picsum.photos/400/400?a=2"
-  }
 
+  const infoVideo = [{
+      nome: "video 1",
+      img: "https://picsum.photos/400/400?a=2"
+    },
+    {
+      nome: "video 2",
+      img: "https://picsum.photos/410/400?a=2"
+    },
+    {
+      nome: "video 3",
+      img: "https://picsum.photos/420/400?a=2"
+    },
+    {
+      nome: "video 4",
+      img: "https://picsum.photos/430/400?a=2"
+    },
+    {
+      nome: "video 5",
+      img: "https://picsum.photos/440/400?a=2"
+    },
+    {
+      nome: "video 6",
+      img: "https://picsum.photos/450/400?a=2"
+    },
+    {
+      nome: "video 7",
+      img: "https://picsum.photos/460/400?a=2"
+    },
+    {
+      nome: "video 8",
+      img: "https://picsum.photos/470/400?a=2"
+    }
+  ]
   function reproduzVideo() {
     alert("O vídeo está sendo reproduzido");
   }
@@ -34,21 +62,37 @@ export default function App() {
 
           <section className="painel-de-videos">
 
-              <CardVideo/>
+              <CardVideo
+              infoVideo={infoVideo[0]}
+              />
             
-              <CardVideo/>
+              <CardVideo
+              infoVideo={infoVideo[1]}
+              />
             
-              <CardVideo/>
+              <CardVideo
+              infoVideo={infoVideo[2]}
+              />
             
-              <CardVideo/>
+              <CardVideo
+              infoVideo={infoVideo[3]}
+              />
             
-              <CardVideo/>
+              <CardVideo
+              infoVideo={infoVideo[4]}
+              />
             
-              <CardVideo/>
+              <CardVideo
+              infoVideo={infoVideo[5]}
+              />
             
-              <CardVideo/>
+              <CardVideo
+              infoVideo={infoVideo[6]}
+              />
             
-              <CardVideo/>
+              <CardVideo
+              infoVideo={infoVideo[7]}
+              />
             
           </section>
         </main>
